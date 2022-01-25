@@ -28,18 +28,34 @@ body{
     border-top: 30px solid #000;
     border-radius: 10px;
 }
-.bulb span::nth-child(1){
+.bulb span:nth-child(1){
     position: absolute;
+    top:-16px;
+    left:-4px;
     display: block;
     width: 30px;
     height: 30px;
-    box-shadow: ;
-    background: #f00;
+    transform: rotate(342deg);
+    box-shadow: 20px 20px 0 10px #444;
+    background: transparent;
+    border-bottom-right-radius:40px ;
+}
+.bulb span:nth-child(2){
+    position: absolute;
+    top:-16px;
+    right:-4px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    transform: rotate(17deg);
+    box-shadow: -20px 20px 0 10px #444;
+    background: transparent;
+    border-bottom-left-radius:40px ;
 }
 .wire{
     position: absolute;
-    left: calc(50% -2px);
-    height: 60vh;
+    left: calc(50% - 2px);
+    height:60vh;
     width: 4px;
     bottom: 50%;
     background: #000;
