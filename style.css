@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #222;
+}
+.bulb{
+    border-radius: 50%;
+    position: relative;
+    background:#444;
+    height: 80px;
+    width: 80px;
+}
+.bulb::before{
+    content: '';
+    position: absolute;
+    left: 22.5px;
+    top:-50px;
+    width: 35px;
+    height: 80px;   
+    background: #444;
+    border-top: 30px solid #000;
+    border-radius: 10px;
+}
+.bulb span::nth-child(1){
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    box-shadow: ;
+    background: #f00;
+}
+.wire{
+    position: absolute;
+    left: calc(50% -2px);
+    height: 60vh;
+    width: 4px;
+    bottom: 50%;
+    background: #000;
+}
